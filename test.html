@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing icon</title>
+
+    <style>
+
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html
+        {
+            font-size: 62.5%;  /* This sets font-size to 10px */
+        }
+
+        body
+        {
+            font-family: 'Barlow Semi Condensed', sans-serif;
+            background-color: hsl(210, 46%, 95%);
+            font-weight: 500;
+        }
+        
+        .testimonial-section
+        {
+            padding: 8rem 0;
+        }
+        .container
+        {
+            max-width: 70rem;
+            margin: 0 auto;
+            padding: 0 3.2rem;
+        }
+
+        .grid--4-cols
+        {
+            display: grid;
+            grid-template-columns:1fr 1fr 1fr 1fr;
+            gap: 3.2rem;
+            /* align-items:start; */
+        }
+
+        .testimonial-card--lg
+        {
+            /* height:32rem;  */
+            width: 100%;
+            padding: 2.4rem 3.2rem;   
+            border-radius: 9px;
+            color:hsl(210, 46%, 95%);
+            box-shadow: 0 10px 30px rgba(189, 189, 189, 0.75);
+        }
+
+        .img-box
+        {
+            width: 3.2rem;
+            height: 3.2rem;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.306);
+
+        }
+
+        .img-box img
+        {
+            width: 3.2rem;
+            height: 3.2rem;
+            border-radius: 50%;
+            padding: 2px;
+        }
+
+        .author-box
+        {
+            display: flex;
+            gap: 1.6rem;
+            align-items: center;
+            margin-bottom: 1.6rem;
+
+        }
+
+
+
+
+        /* Author Details */
+        .author-name
+        {
+            font-size: 1.4rem;
+            margin-bottom: .2rem;
+            color: hsl(0,0%,100%);
+        }
+
+        .author-status
+        {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        /* Testimonial box */
+        .testimonial-text
+        {
+            font-size: 2.2rem;
+            margin-bottom: 2.4rem;
+            font-weight: 600;
+
+        }
+
+        .testimonial-subtext
+        {
+            font-size: 1.4rem;
+            line-height: 1.6;
+
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .card-01
+        {
+             background-color: hsl(263, 55%, 52%);
+             background-image: url(./images/bg-pattern-quotation.svg);
+             background-repeat: no-repeat;
+             background-position:75% 1%;
+             grid-column: span 2;
+        }
+
+        
+        .card-02
+        {
+            background-color: hsl(219, 29%, 14%);
+            grid-column: span 2;
+        }
+
+        @media(max-width:60em)
+        {
+          .grid--4-cols
+          {
+            grid-template-columns: 1fr;
+          }
+          .testimonial-card--lg
+          {
+            width: 60%;
+          }
+        }
+            
+
+    </style>
+</head>
+<body>
+    <section class="testimonial-section">
+        <div class="container grid--4-cols">
+          <!-- CARD 01 -->
+          <div class="testimonial-card--lg card-01">
+            <div class="author-box">
+              <div class="img-box">
+                <img src="./images/image-daniel.jpg" alt="user daniel image">
+              </div>
+              <div class="author-details">
+                <p class="author-name">Daniel Clifford</p>
+                <p class="author-status">Verified Graduate</p>
+              </div>
+            </div>
+  
+            <div class="testimonial-box">
+              <p class="testimonial-text">  I received a job offer mid-course, and the subjects I learned were current, if not more so, 
+                in the company I joined. I honestly feel I got every penny’s worth.
+              </p>
+              <p class="testimonial-subtext">
+                “ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a 
+                transition and have heard some people who had an amazing experience here. I signed up 
+                for the free intro course and found it incredibly fun! I enrolled shortly thereafter. 
+                The next 12 weeks was the best - and most grueling - time of my life. Since completing 
+                the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”    
+              </p>
+  
+            </div>
+          </div>
+          <div class="testimonial-card--lg card-02">
+            <div class="author-box">
+              <div class="img-box">
+                <img src="./images/image-daniel.jpg" alt="user daniel image">
+              </div>
+              <div class="author-details">
+                <p class="author-name">Daniel Clifford</p>
+                <p class="author-status">Verified Graduate</p>
+              </div>
+            </div>
+  
+            <div class="testimonial-box">
+              <p class="testimonial-text">  I received a job offer mid-course, and the subjects I learned were current, if not more so, 
+                in the company I joined. I honestly feel I got every penny’s worth.
+              </p>
+              <p class="testimonial-subtext">
+                “ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a 
+                transition and have heard some people who had an amazing experience here. I signed up 
+                for the free intro course and found it incredibly fun! I enrolled shortly thereafter. 
+                The next 12 weeks was the best - and most grueling - time of my life. Since completing 
+                the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”    
+              </p>
+  
+            </div>
+          </div>
+        </div>
+    </section>
+</body>
+</html>
